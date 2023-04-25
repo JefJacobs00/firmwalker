@@ -1,0 +1,151 @@
+***Firmware Directory***
+/home/kali/Downloads/studentv1
+***Search for password files***
+##################################### passwd
+
+##################################### shadow
+
+##################################### *.psk
+
+***Search for accounts with shell access***
+
+***Search for Unix-SHA512 hashes***
+/home/kali/Downloads/studentv1/etc/shadow-:$6$vOsShJfzJ$nspR/.gahnFFRBL9hrTkWCwr8fCjhkIaEyABvCCpCVL6p1G3dZVEhvmbcOg2Bh1OG.a9ZmKkzwo2V5ZDOin73/
+/home/kali/Downloads/studentv1/etc/shadow-:$6$dY5hO/6B48/9D.66$QHHDlmdkw.CHtzQg.W/e7s8SnGJaJgwVYwKzLu1vB6ZTeKBb2BXj1xc7wJJUl7nFgUXy6AHf/6z63yOPuXBT7/
+/home/kali/Downloads/studentv1/etc/shadow:$6$WQBiS3eMvOMsmsDy$nebw3AB8weP3mqP/1qqcJsN/Xh.CW5S2hsSHMVSxdH5sqEMdJZzzDfmcoBeZeNNh43JqXSquoRES3D4bgxKBy.
+/home/kali/Downloads/studentv1/etc/shadow:$6$vOsShJfzJ$nspR/.gahnFFRBL9hrTkWCwr8fCjhkIaEyABvCCpCVL6p1G3dZVEhvmbcOg2Bh1OG.a9ZmKkzwo2V5ZDOin73/
+/home/kali/Downloads/studentv1/etc/shadow:$6$dY5hO/6B48/9D.66$QHHDlmdkw.CHtzQg.W/e7s8SnGJaJgwVYwKzLu1vB6ZTeKBb2BXj1xc7wJJUl7nFgUXy6AHf/6z63yOPuXBT7/
+
+***List etc/ssl directory***
+total 20
+lrwxrwxrwx 1 kali kali    25 Nov 24  2021 cert.pem -> certs/ca-certificates.crt
+drwxr-xr-x 2 kali kali 20480 Apr  3 10:27 certs
+
+***Search for SSL related files***
+
+***Search for SSH related files***
+##################################### authorized_keys
+1/home/manager/.ssh/authorized_keys
+
+##################################### *authorized_keys*
+1/home/manager/.ssh/authorized_keys
+
+##################################### host_key
+
+##################################### *host_key*
+
+##################################### id_rsa
+1/home/manager/.ssh/id_rsa
+1/root/.ssh/id_rsa
+
+##################################### *id_rsa*
+1/home/manager/.ssh/id_rsa.pub
+1/home/manager/.ssh/id_rsa
+1/root/.ssh/id_rsa
+
+##################################### id_dsa
+
+##################################### *id_dsa*
+
+##################################### *.pub
+1/home/manager/.ssh/id_rsa.pub
+1/usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub
+1/usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub
+1/usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub
+1/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub
+1/usr/share/apk/keys/s390x/alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub
+1/usr/share/apk/keys/s390x/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub
+1/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub
+1/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub
+1/usr/share/apk/keys/armhf/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub
+1/usr/share/apk/keys/armhf/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub
+1/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub
+1/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub
+1/usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub
+1/usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub
+1/usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub
+1/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub
+1/usr/share/apk/keys/riscv64/alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub
+1/usr/share/apk/keys/riscv64/alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub
+1/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub
+1/usr/share/apk/keys/aarch64/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub
+1/usr/share/apk/keys/aarch64/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub
+1/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub
+1/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub
+1/usr/share/apk/keys/mips64/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub
+1/usr/share/apk/keys/ppc64le/alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub
+1/usr/share/apk/keys/ppc64le/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub
+1/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub
+1/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub
+1/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub
+1/usr/share/apk/keys/armv7/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub
+1/usr/share/apk/keys/armv7/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub
+1/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub
+1/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub
+1/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub
+1/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub
+1/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub
+1/etc/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub
+1/etc/apk/keys/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub
+1/etc/apk/keys/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub
+1/etc/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub
+1/etc/apk/keys/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub
+
+
+***Search for files***
+##################################### *.conf
+1/lib/sysctl.d/00-alpine.conf
+1/etc/sysctl.conf
+1/etc/udhcpd.conf
+1/etc/sudo_logsrvd.conf
+1/etc/modprobe.d/kms.conf
+1/etc/modprobe.d/blacklist.conf
+1/etc/modprobe.d/aliases.conf
+1/etc/modprobe.d/i386.conf
+1/etc/sudo.conf
+1/etc/rc.conf
+1/etc/resolv.conf
+1/etc/ca-certificates.conf
+
+##################################### *.cfg
+
+##################################### *.ini
+
+
+***Search for database related files***
+##################################### *.db
+
+##################################### *.sqlite
+
+##################################### *.sqlite3
+
+
+***Search for shell scripts***
+##################################### shell scripts
+1/lib/rc/sh/cgroup-release-agent.sh
+1/lib/rc/sh/runit.sh
+1/lib/rc/sh/s6.sh
+1/lib/rc/sh/rc-cgroup.sh
+1/lib/rc/sh/binfmt.sh
+1/lib/rc/sh/functions.sh
+1/lib/rc/sh/init-early.sh
+1/lib/rc/sh/supervise-daemon.sh
+1/lib/rc/sh/rc-functions.sh
+1/lib/rc/sh/rc-mount.sh
+1/lib/rc/sh/gendepends.sh
+1/lib/rc/sh/init.sh
+1/lib/rc/sh/start-stop-daemon.sh
+1/lib/rc/sh/openrc-run.sh
+1/home/manager/checkNetwork.sh
+1/usr/bin/findssl.sh
+1/usr/share/openrc/support/openvpn/down.sh
+1/usr/share/openrc/support/openvpn/up.sh
+1/usr/share/openrc/support/sysvinit/halt.sh
+1/etc/init.d/functions.sh
+1/etc/profile.d/locale.sh
+
+***Search for other .bin files***
+##################################### bin files
+
+***Search for patterns in files***
+-------------------- upgrade --------------------

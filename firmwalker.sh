@@ -48,11 +48,21 @@ passfiles=("${array[@]}")
 for passfile  in "${passfiles[@]}"
 do
     msg "##################################### $passfile"
-    find $FIRMDIR -name $passfile | cut -c${#FIRMDIR}- | tee -a $FILE
+    find $FIRMDIR -name $passfile | cut -c${#FIRMDIR}-
+    Files=$(find $FIRMDIR -name $passfile)
     msg ""
 done
-msg "***Search for Unix-MD5 hashes***"
-egrep -sro '\$1\$\w{8}\S{23}' $FIRMDIR | tee -a $FILE
+
+msg "***Search for accounts with shell access***"
+users=$(cat $FIRMDIR/etc/passwd | grep -a "/bin/ash" | cut -d':' -f1)
+for user in $users
+do
+    echo "[Account]:"$user 
+done
+
+msg ""
+msg "***Search for Unix-SHA512 hashes***"
+egrep -sro '\$6\$[^:]*' $FIRMDIR | tee -a $FILE
 msg ""
 if [[ -d "$FIRMDIR/etc/ssl" ]]; then
     msg "***List etc/ssl directory***"
