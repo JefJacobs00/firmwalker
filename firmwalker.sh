@@ -60,9 +60,18 @@ do
     echo "[Account]:"$user 
 done
 
+msg "***Search for Unix-MD5 hashes***"
+egrep -sro '\$1\$\w{8}\S{23}' $FIRMDIR | tee -a $FILE
+msg ""
+
 msg ""
 msg "***Search for Unix-SHA512 hashes***"
-egrep -sro '\$6\$[^:]*' $FIRMDIR | tee -a $FILE
+hashes=$(egrep -sro '\$6\$[^:]*' $FIRMDIR | cut -d':' -f2 )
+for hash in $hashes
+do
+    echo "[Hash]:"$hash
+done
+
 msg ""
 if [[ -d "$FIRMDIR/etc/ssl" ]]; then
     msg "***List etc/ssl directory***"
