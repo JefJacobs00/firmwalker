@@ -2,6 +2,9 @@
 set -e
 set -u
 
+# Get the directory path of the script
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
 function usage {
 	echo "Usage:"
 	echo "$0 {path to extracted file system of firmware}\
@@ -43,7 +46,7 @@ fi
 msg "***Firmware Directory***"
 msg $FIRMDIR
 msg "***Search for password files***"
-getArray "data/passfiles"
+getArray "$SCRIPT_DIR/data/passfiles"
 passfiles=("${array[@]}")
 for passfile  in "${passfiles[@]}"
 do
@@ -64,12 +67,11 @@ msg "***Search for Unix-MD5 hashes***"
 egrep -sro '\$1\$\w{8}\S{23}' $FIRMDIR | tee -a $FILE
 msg ""
 
-msg ""
 msg "***Search for Unix-SHA512 hashes***"
-hashes=$(egrep -sro '\$6\$[^:]*' $FIRMDIR | cut -d':' -f2 )
-for hash in $hashes
+sha512_hashes=$(egrep -sro '\$6\$[^:]*' $FIRMDIR | cut -d':' -f2 )
+for hash in $sha512_hashes
 do
-    echo "[Hash]:"$hash
+    echo "[Hash sha512]:"$hash
 done
 
 msg ""
