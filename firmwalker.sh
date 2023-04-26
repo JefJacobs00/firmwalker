@@ -184,6 +184,7 @@ do
     msg ""
 done
 
+exit
 msg ""
 msg "***Search for ip addresses***"
 msg "##################################### ip addresses"
