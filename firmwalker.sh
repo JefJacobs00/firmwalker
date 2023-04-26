@@ -81,7 +81,7 @@ if [[ -d "$FIRMDIR/etc/ssl" ]]; then
 fi
 msg ""
 msg "***Search for SSL related files***"
-getArray "data/sslfiles"
+getArray "$SCRIPT_DIR/data/sslfiles"
 sslfiles=("${array[@]}")
 for sslfile in ${sslfiles[@]}
 do
@@ -115,7 +115,7 @@ done
 
 msg ""
 msg "***Search for SSH related files***"
-getArray "data/sshfiles"
+getArray "$SCRIPT_DIR/data/sshfiles"
 sshfiles=("${array[@]}")
 for sshfile in ${sshfiles[@]}
 do
@@ -125,7 +125,7 @@ do
 done
 msg ""
 msg "***Search for files***"
-getArray "data/files"
+getArray "$SCRIPT_DIR/data/files"
 files=("${array[@]}")
 for file in ${files[@]}
 do
@@ -135,7 +135,7 @@ do
 done
 msg ""
 msg "***Search for database related files***"
-getArray "data/dbfiles"
+getArray "$SCRIPT_DIR/data/dbfiles"
 dbfiles=("${array[@]}")
 for dbfile in ${dbfiles[@]}
 do
@@ -153,7 +153,7 @@ msg "##################################### bin files"
 find $FIRMDIR -name "*.bin" | cut -c${#FIRMDIR}- | tee -a $FILE
 msg ""
 msg "***Search for patterns in files***"
-getArray "data/patterns"
+getArray "$SCRIPT_DIR/data/patterns"
 patterns=("${array[@]}")
 for pattern in "${patterns[@]}"
 do
@@ -164,7 +164,7 @@ done
 msg ""
 msg "***Search for web servers***"
 msg "##################################### search for web servers"
-getArray "data/webservers"
+getArray "$SCRIPT_DIR/data/webservers"
 webservers=("${array[@]}")
 for webserver in ${webservers[@]}
 do
@@ -175,7 +175,7 @@ done
 msg ""
 msg "***Search for important binaries***"
 msg "##################################### important binaries"
-getArray "data/binaries"
+getArray "$SCRIPT_DIR/data/binaries"
 binaries=("${array[@]}")
 for binary in "${binaries[@]}"
 do
